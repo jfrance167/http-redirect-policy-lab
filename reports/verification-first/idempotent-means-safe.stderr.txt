@@ -1,0 +1,108 @@
+test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths) ... FAIL
+test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul) ... ok
+test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics) ... ok
+test_actual_parse_error_both_closed (test_lab.DeliveryTests.test_actual_parse_error_both_closed) ... ok
+test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) ... ok
+test_checked_help_and_redirection_seams (test_lab.DeliveryTests.test_checked_help_and_redirection_seams) ... ok
+test_checked_stdout_and_diagnostics_seams (test_lab.DeliveryTests.test_checked_stdout_and_diagnostics_seams) ... ok
+test_fresh_short_flush_close_cleanup_seams (test_lab.DeliveryTests.test_fresh_short_flush_close_cleanup_seams) ... ok
+test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded) ... FAIL
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_errors (test_lab.ModelTests.test_frozen_errors) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... 
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-put') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-delete') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='all-independent-gates') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='cross-stop-unsafe-unknown') ... FAIL
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... FAIL
+test_identity_guards_never_call_native_hooks (test_lab.ModelTests.test_identity_guards_never_call_native_hooks) ... ok
+test_immutable_and_independent_copies (test_lab.ModelTests.test_immutable_and_independent_copies) ... FAIL
+test_independent_method_table (test_lab.ModelTests.test_independent_method_table) ... ok
+test_stress_admitted_shape_and_cap_seam (test_lab.ModelTests.test_stress_admitted_shape_and_cap_seam) ... ok
+test_tree_bytes_and_schema_boundaries (test_lab.ModelTests.test_tree_bytes_and_schema_boundaries) ... ok
+test_whole_input_validation_and_shortcut_controls (test_lab.ModelTests.test_whole_input_validation_and_shortcut_controls) ... ok
+
+======================================================================
+FAIL: test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 240, in test_actual_cli_and_fresh_alias_paths
+    self.assertEqual(json.loads(result.stdout), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[10801 chars]s': [], 'rule': 'METHOD_PRESERVED', 'proposed_[14810 chars]y.']} != {'ver[10801 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[14917 chars]y.']}
+Diff is 51833 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 224, in test_reports_inert_and_bounded
+    self.assertEqual(json.loads(report.encode(evaluated)), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[10801 chars]s': [], 'rule': 'METHOD_PRESERVED', 'proposed_[14810 chars]y.']} != {'ver[10801 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[14917 chars]y.']}
+Diff is 51833 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-put')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[46 chars]s': [], 'rule': 'METHOD_PRESERVED', 'proposed_[532 chars] []}} != {'id'[46 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[522 chars] []}}
+Diff is 1136 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-delete')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[49 chars]s': [], 'rule': 'METHOD_PRESERVED', 'proposed_[533 chars] []}} != {'id'[49 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[522 chars] []}}
+Diff is 1140 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='all-independent-gates')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[147 chars]LITY'], 'rule': 'METHOD_PRESERVED', 'proposed_[561 chars] []}} != {'id'[147 chars]LITY', 'UNKNOWN_UNSAFE_REPLAY_POLICY'], 'rule'[625 chars] []}}
+Diff is 1308 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='cross-stop-unsafe-unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[37 chars]s': 'SUPPORTED', 'reasons': ['CROSS_ORIGIN_DEN[547 chars] []}} != {'id'[37 chars]s': 'UNSUPPORTED', 'reasons': ['CROSS_ORIGIN_D[611 chars] []}}
+Diff is 1087 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 34, in test_frozen_labels
+    self.assertEqual(result, EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[10801 chars]s': [], 'rule': 'METHOD_PRESERVED', 'proposed_[14810 chars]y.']} != {'ver[10801 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[14917 chars]y.']}
+Diff is 51833 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_immutable_and_independent_copies (test_lab.ModelTests.test_immutable_and_independent_copies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 90, in test_immutable_and_independent_copies
+    self.assertEqual(evaluate(document)["results"][0], EXPECTED["results"][25])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[147 chars]LITY'], 'rule': 'METHOD_PRESERVED', 'proposed_[561 chars] []}} != {'id'[147 chars]LITY', 'UNKNOWN_UNSAFE_REPLAY_POLICY'], 'rule'[625 chars] []}}
+Diff is 1308 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.979s
+
+FAILED (failures=8)

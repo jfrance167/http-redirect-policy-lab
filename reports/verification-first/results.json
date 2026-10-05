@@ -1,0 +1,199 @@
+{
+  "runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "checks": [
+    {
+      "name": "tests-normal",
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "tests-optimized",
+      "arguments": [
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "compile",
+      "arguments": [
+        "-m",
+        "compileall",
+        "-q",
+        "redirectlab",
+        "tests",
+        "tools"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "bandit",
+      "arguments": [
+        "-m",
+        "bandit",
+        "-r",
+        "redirectlab",
+        "tests",
+        "tools",
+        "-f",
+        "json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "rewrite-preserving-codes",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "lose-post-preserve-choice",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "idempotent-means-safe",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "skip-unavailable-body",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "known-stop-loses-unknown",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "tests-restored",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "demo-json",
+      "arguments": [
+        "-m",
+        "redirectlab",
+        "fixtures/cases.json",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\http-redirect-policy-lab\\reports\\verification-first\\demo.json"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true
+    },
+    {
+      "name": "demo-markdown",
+      "arguments": [
+        "-m",
+        "redirectlab",
+        "fixtures/cases.json",
+        "--format",
+        "markdown",
+        "--output",
+        "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\http-redirect-policy-lab\\reports\\verification-first\\demo.md"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true
+    }
+  ],
+  "model_restored": true,
+  "hashes": {
+    "redirectlab\\contracts.py": "6d5e9acd9917f4704a3a50e6d4bdba2ad9ff9627f3d455e681102b0f8b717ad1",
+    "redirectlab\\model.py": "83b37e398b689dda62e22d719f9ab2bc2f04d412b10b727bf8187f421e36dafa",
+    "redirectlab\\report.py": "7a942fe039028410216cdef0eb8c8dbb2ae4c8080d7e2db6f7c71046655cf400",
+    "redirectlab\\__init__.py": "72cf07f26285f3490d0bc4c8fa8c396c88fc200f008215322d63cfa1eb9a6212",
+    "redirectlab\\__main__.py": "0c12a90ded8a343b6673daeadba76782677645a52c8d12e412f86fc75ecfc6b0",
+    "tests\\test_lab.py": "d8d81a1e7b70ad90c65ca092d2b2baeb92070f26f0480295999498c683b0e719",
+    "tools\\verify.py": "e48779cd3e57e158ed5f73a0459e008912e522d6c2d6e637657db23805e085bc",
+    "fixtures\\cases.json": "dcff25124824ad7dae4c585300f8ac5dc351ff3337f4e50f77a2f6f0ea83965c",
+    "fixtures\\expected.json": "a34a87a18c431caeacec6fbc8f16c8df65c9da971c5bd3dd9d0ec0769da9707e",
+    "fixtures\\errors.json": "4acc345aaa350320851c22dd7a089c4b0cf8d4d2b48da326d834a586c0264009",
+    "CONTRACT.md": "7e99731f2be2d7988d9182a3d3dfd57f00fe2f741de0ae1ae2bdb67084c09fb1"
+  },
+  "passed": true
+}

@@ -1,0 +1,9 @@
+{
+  "tests": 7,
+  "mode": "optimized",
+  "phase": "stage2",
+  "exit_code": 0,
+  "finite_controls": 105,
+  "frozen_oracles": 40,
+  "normal_first_run": "7 tests passed; tool output retained in chat"
+}

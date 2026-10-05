@@ -1,0 +1,766 @@
+test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths) ... FAIL
+test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul) ... ok
+test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics) ... ok
+test_actual_parse_error_both_closed (test_lab.DeliveryTests.test_actual_parse_error_both_closed) ... ok
+test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) ... ok
+test_checked_help_and_redirection_seams (test_lab.DeliveryTests.test_checked_help_and_redirection_seams) ... ok
+test_checked_stdout_and_diagnostics_seams (test_lab.DeliveryTests.test_checked_stdout_and_diagnostics_seams) ... ok
+test_fresh_short_flush_close_cleanup_seams (test_lab.DeliveryTests.test_fresh_short_flush_close_cleanup_seams) ... ok
+test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded) ... FAIL
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_errors (test_lab.ModelTests.test_frozen_errors) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... 
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='patch-307') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='post-308') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='get-307') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='head-308') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-put') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-delete') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-unavailable') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-unknown') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='manual-body-unknown') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='all-independent-gates') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-stop-cross-unknown') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='missing-location-body-unknown') ... FAIL
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... FAIL
+test_identity_guards_never_call_native_hooks (test_lab.ModelTests.test_identity_guards_never_call_native_hooks) ... ok
+test_immutable_and_independent_copies (test_lab.ModelTests.test_immutable_and_independent_copies) ... FAIL
+test_independent_method_table (test_lab.ModelTests.test_independent_method_table) ... 
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='unknown') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='get') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='preserve') ... FAIL
+  test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='unknown') ... FAIL
+test_stress_admitted_shape_and_cap_seam (test_lab.ModelTests.test_stress_admitted_shape_and_cap_seam) ... ok
+test_tree_bytes_and_schema_boundaries (test_lab.ModelTests.test_tree_bytes_and_schema_boundaries) ... ok
+test_whole_input_validation_and_shortcut_controls (test_lab.ModelTests.test_whole_input_validation_and_shortcut_controls) ... ok
+
+======================================================================
+FAIL: test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 240, in test_actual_cli_and_fresh_alias_paths
+    self.assertEqual(json.loads(result.stdout), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[5161 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[20129 chars]y.']} != {'ver[5161 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'PA[20557 chars]y.']}
+Diff is 59459 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 224, in test_reports_inert_and_bounded
+    self.assertEqual(json.loads(report.encode(evaluated)), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[5161 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[20129 chars]y.']} != {'ver[5161 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'PA[20557 chars]y.']}
+Diff is 59459 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='patch-307')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[57 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[508 chars] []}} != {'id'[57 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'PA[527 chars] []}}
+Diff is 1427 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='post-308')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[56 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[507 chars] []}} != {'id'[56 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'PO[524 chars] []}}
+Diff is 1419 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='get-307')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[55 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[502 chars] []}} != {'id'[55 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'GE[513 chars] []}}
+Diff is 1286 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='head-308')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[56 chars]e': 'RETRIEVAL_303', 'proposed_method': 'HEAD'[505 chars] []}} != {'id'[56 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'HE[516 chars] []}}
+Diff is 1291 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-put')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[46 chars]s': [], 'rule': 'RETRIEVAL_303', 'proposed_met[517 chars] []}} != {'id'[46 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[522 chars] []}}
+Diff is 1460 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='unsafe-delete')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[49 chars]s': [], 'rule': 'RETRIEVAL_303', 'proposed_met[516 chars] []}} != {'id'[49 chars]s': ['UNSAFE_REPLAY_DENIED'], 'rule': 'METHOD_[522 chars] []}}
+Diff is 1464 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-unavailable')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[52 chars]s': [], 'rule': 'RETRIEVAL_303', 'proposed_met[522 chars] []}} != {'id'[52 chars]s': ['BODY_NOT_REPLAYABLE'], 'rule': 'METHOD_P[526 chars] []}}
+Diff is 1471 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[24 chars]s': 'SUPPORTED', 'reasons': [], 'rule': 'RETRI[540 chars] []}} != {'id'[24 chars]s': 'UNSUPPORTED', 'reasons': ['UNKNOWN_BODY_R[560 chars] []}}
+Diff is 1439 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='manual-body-unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[31 chars]s': 'SUPPORTED', 'reasons': ['MANUAL_POLICY'],[517 chars] []}} != {'id'[31 chars]s': 'UNSUPPORTED', 'reasons': ['MANUAL_POLICY'[589 chars] []}}
+Diff is 1382 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='all-independent-gates')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[33 chars]s': 'SUPPORTED', 'reasons': ['BUDGET_EXHAUSTED[604 chars] []}} != {'id'[33 chars]s': 'UNSUPPORTED', 'reasons': ['BUDGET_EXHAUST[739 chars] []}}
+Diff is 1636 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='body-stop-cross-unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[62 chars]': ['UNKNOWN_CROSS_ORIGIN_POLICY'], 'rule': 'R[532 chars] []}} != {'id'[62 chars]': ['BODY_NOT_REPLAYABLE', 'UNKNOWN_CROSS_ORIG[588 chars] []}}
+Diff is 1528 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='missing-location-body-unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 33, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[41 chars]s': 'SUPPORTED', 'reasons': ['NO_LOCATION'], '[513 chars] []}} != {'id'[41 chars]s': 'UNSUPPORTED', 'reasons': ['NO_LOCATION', [585 chars] []}}
+Diff is 1386 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 34, in test_frozen_labels
+    self.assertEqual(result, EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[5161 chars]e': 'RETRIEVAL_303', 'proposed_method': 'GET',[20129 chars]y.']} != {'ver[5161 chars]e': 'METHOD_PRESERVED', 'proposed_method': 'PA[20557 chars]y.']}
+Diff is 59459 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_immutable_and_independent_copies (test_lab.ModelTests.test_immutable_and_independent_copies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 90, in test_immutable_and_independent_copies
+    self.assertEqual(evaluate(document)["results"][0], EXPECTED["results"][25])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[33 chars]s': 'SUPPORTED', 'reasons': ['BUDGET_EXHAUSTED[604 chars] []}} != {'id'[33 chars]s': 'UNSUPPORTED', 'reasons': ['BUDGET_EXHAUST[739 chars] []}}
+Diff is 1636 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='GET', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='HEAD', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='POST', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PUT', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='DELETE', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='PATCH', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=307, method='OPTIONS', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='GET', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='HEAD', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 65, in test_independent_method_table
+    self.assertEqual(row["body_action"], None if expected is None else (
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "DROP" if status == 303 or expected != method else "ABSENT"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'DROP' != 'ABSENT'
+- DROP
++ ABSENT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='POST', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'POST'
+- GET
++ POST
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PUT', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PUT'
+- GET
++ PUT
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='DELETE', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'DELETE'
+- GET
++ DELETE
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='PATCH', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'PATCH'
+- GET
++ PATCH
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='get')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='preserve')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+======================================================================
+FAIL: test_independent_method_table (test_lab.ModelTests.test_independent_method_table) (status=308, method='OPTIONS', choice='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-redirect-policy-lab\tests\test_lab.py", line 63, in test_independent_method_table
+    self.assertEqual(row["proposed_method"], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GET' != 'OPTIONS'
+- GET
++ OPTIONS
+
+
+----------------------------------------------------------------------
+Ran 18 tests in 4.018s
+
+FAILED (failures=58)

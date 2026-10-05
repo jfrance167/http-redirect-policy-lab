@@ -1,0 +1,1419 @@
+{
+  "version": 1,
+  "results": [
+    {
+      "id": "get-301",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "head-302",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "HEAD",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "HEAD",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 302,
+        "method": "HEAD",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-301-get",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "POST_TO_GET",
+      "proposed_method": "GET",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 301,
+        "method": "POST",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-301-preserve",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "POST_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "POST",
+        "body_action": "PRESERVE"
+      },
+      "declaration": {
+        "response_status": 301,
+        "method": "POST",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "preserve",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-302-get",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "POST_TO_GET",
+      "proposed_method": "GET",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 302,
+        "method": "POST",
+        "body": "nonreplayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-302-preserve",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "POST_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "POST",
+        "body_action": "PRESERVE"
+      },
+      "declaration": {
+        "response_status": 302,
+        "method": "POST",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "preserve",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "put-302",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "PUT",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "PUT",
+        "body_action": "PRESERVE"
+      },
+      "declaration": {
+        "response_status": 302,
+        "method": "PUT",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "delete-301",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "DELETE",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "DELETE",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 301,
+        "method": "DELETE",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "patch-307",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "PATCH",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "PATCH",
+        "body_action": "PRESERVE"
+      },
+      "declaration": {
+        "response_status": 307,
+        "method": "PATCH",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-308",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "POST",
+        "body_action": "PRESERVE"
+      },
+      "declaration": {
+        "response_status": 308,
+        "method": "POST",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "get-307",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 307,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "head-308",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "HEAD",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "HEAD",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 308,
+        "method": "HEAD",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "post-303",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "RETRIEVAL_303",
+      "proposed_method": "GET",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 303,
+        "method": "POST",
+        "body": "unknown",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "put-303",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "RETRIEVAL_303",
+      "proposed_method": "GET",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 303,
+        "method": "PUT",
+        "body": "nonreplayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "deny",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "head-303",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "RETRIEVAL_303",
+      "proposed_method": "HEAD",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "HEAD",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 303,
+        "method": "HEAD",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "get-303",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "RETRIEVAL_303",
+      "proposed_method": "GET",
+      "body_action": "DROP",
+      "content_fields_action": "REMOVE_BODY_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "GET",
+        "body_action": "DROP"
+      },
+      "declaration": {
+        "response_status": 303,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "options-301",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "OPTIONS",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_FOLLOW_ASSUMPTIONS",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": {
+        "method": "OPTIONS",
+        "body_action": "ABSENT"
+      },
+      "declaration": {
+        "response_status": 301,
+        "method": "OPTIONS",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unsafe-put",
+      "status": "SUPPORTED",
+      "reasons": [
+        "UNSAFE_REPLAY_DENIED"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "PUT",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "UNSAFE_REPLAY_DENIED"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 307,
+        "method": "PUT",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "deny",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unsafe-delete",
+      "status": "SUPPORTED",
+      "reasons": [
+        "UNSAFE_REPLAY_DENIED"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "DELETE",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "UNSAFE_REPLAY_DENIED"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 308,
+        "method": "DELETE",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "deny",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "body-unavailable",
+      "status": "SUPPORTED",
+      "reasons": [
+        "BODY_NOT_REPLAYABLE"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BODY_NOT_REPLAYABLE"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 307,
+        "method": "POST",
+        "body": "nonreplayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "body-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "UNRESOLVED",
+      "blockers": [],
+      "unknowns": [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 308,
+        "method": "POST",
+        "body": "unknown",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "choice-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_METHOD_POLICY"
+      ],
+      "rule": "POST_CHOICE_UNKNOWN",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "UNRESOLVED",
+      "blockers": [],
+      "unknowns": [
+        "UNKNOWN_METHOD_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "POST",
+        "body": "nonreplayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "unknown",
+          "unsafe_replay": "deny",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "manual-choice-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "MANUAL_POLICY",
+        "UNKNOWN_METHOD_POLICY"
+      ],
+      "rule": "POST_CHOICE_UNKNOWN",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "MANUAL_POLICY"
+      ],
+      "unknowns": [
+        "UNKNOWN_METHOD_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 302,
+        "method": "POST",
+        "body": "unknown",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "manual",
+          "post_301_302": "unknown",
+          "unsafe_replay": "unknown",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "manual-body-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "MANUAL_POLICY",
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "MANUAL_POLICY"
+      ],
+      "unknowns": [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 307,
+        "method": "POST",
+        "body": "unknown",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "manual",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "manual-origin-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "MANUAL_POLICY",
+        "UNKNOWN_ORIGIN_RELATION"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "MANUAL_POLICY"
+      ],
+      "unknowns": [
+        "UNKNOWN_ORIGIN_RELATION"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "unknown"
+        },
+        "policy": {
+          "follow": "manual",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "all-independent-gates",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "BUDGET_EXHAUSTED",
+        "CROSS_ORIGIN_DENIED",
+        "MANUAL_POLICY",
+        "UNKNOWN_BODY_REPLAYABILITY",
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "PUT",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BUDGET_EXHAUSTED",
+        "CROSS_ORIGIN_DENIED",
+        "MANUAL_POLICY"
+      ],
+      "unknowns": [
+        "UNKNOWN_BODY_REPLAYABILITY",
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 308,
+        "method": "PUT",
+        "body": "unknown",
+        "location": {
+          "state": "present",
+          "origin_relation": "cross"
+        },
+        "policy": {
+          "follow": "manual",
+          "post_301_302": "get",
+          "unsafe_replay": "unknown",
+          "cross_origin": "deny",
+          "followed": 8,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "budget-follow-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "BUDGET_EXHAUSTED",
+        "UNKNOWN_FOLLOW_POLICY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BUDGET_EXHAUSTED"
+      ],
+      "unknowns": [
+        "UNKNOWN_FOLLOW_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "unknown",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 8,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "cross-stop-unsafe-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "CROSS_ORIGIN_DENIED",
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "PUT",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "CROSS_ORIGIN_DENIED"
+      ],
+      "unknowns": [
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "PUT",
+        "body": "replayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "cross"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "unknown",
+          "cross_origin": "deny",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "body-stop-cross-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "BODY_NOT_REPLAYABLE",
+        "UNKNOWN_CROSS_ORIGIN_POLICY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BODY_NOT_REPLAYABLE"
+      ],
+      "unknowns": [
+        "UNKNOWN_CROSS_ORIGIN_POLICY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 307,
+        "method": "POST",
+        "body": "nonreplayable",
+        "location": {
+          "state": "present",
+          "origin_relation": "cross"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "unknown",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "missing-location-body-unknown",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "NO_LOCATION",
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "POST",
+      "body_action": "PRESERVE",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "NO_LOCATION"
+      ],
+      "unknowns": [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 308,
+        "method": "POST",
+        "body": "unknown",
+        "location": {
+          "state": "absent",
+          "origin_relation": null
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "location-unknown-budget",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "BUDGET_EXHAUSTED",
+        "UNKNOWN_LOCATION"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BUDGET_EXHAUSTED"
+      ],
+      "unknowns": [
+        "UNKNOWN_LOCATION"
+      ],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "unknown",
+          "origin_relation": null
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 0
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "cross-denied",
+      "status": "SUPPORTED",
+      "reasons": [
+        "CROSS_ORIGIN_DENIED"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "CROSS_ORIGIN_DENIED"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "cross"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "deny",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "zero-budget",
+      "status": "SUPPORTED",
+      "reasons": [
+        "BUDGET_EXHAUSTED"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "BUDGET_EXHAUSTED"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 0
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "no-location",
+      "status": "SUPPORTED",
+      "reasons": [
+        "NO_LOCATION"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "NO_LOCATION"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "absent",
+          "origin_relation": null
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "manual",
+      "status": "SUPPORTED",
+      "reasons": [
+        "MANUAL_POLICY"
+      ],
+      "rule": "METHOD_PRESERVED",
+      "proposed_method": "GET",
+      "body_action": "ABSENT",
+      "content_fields_action": "RETAIN_DECLARED_FIELDS",
+      "policy_decision": "WOULD_STOP",
+      "blockers": [
+        "MANUAL_POLICY"
+      ],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "manual",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "created-control",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "NOT_FOLLOW_PROFILE",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "NOT_APPLICABLE",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 201,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "cache-control",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "rule": "NOT_FOLLOW_PROFILE",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "NOT_APPLICABLE",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 304,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "unknown",
+          "origin_relation": null
+        },
+        "policy": {
+          "follow": "unknown",
+          "post_301_302": "unknown",
+          "unsafe_replay": "unknown",
+          "cross_origin": "unknown",
+          "followed": 0,
+          "maximum": 0
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unsupported-feature",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_FEATURE"
+      ],
+      "rule": "UNSUPPORTED",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "UNSUPPORTED",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "GET",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": [
+          "cookies"
+        ]
+      }
+    },
+    {
+      "id": "unsupported-method",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_METHOD"
+      ],
+      "rule": "UNSUPPORTED",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "UNSUPPORTED",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 301,
+        "method": "TRACE",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unsupported-all",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_FEATURE",
+        "UNSUPPORTED_METHOD",
+        "UNSUPPORTED_STATUS"
+      ],
+      "rule": "UNSUPPORTED",
+      "proposed_method": null,
+      "body_action": null,
+      "content_fields_action": null,
+      "policy_decision": "UNSUPPORTED",
+      "blockers": [],
+      "unknowns": [],
+      "next_step": null,
+      "declaration": {
+        "response_status": 399,
+        "method": "CUSTOM",
+        "body": "absent",
+        "location": {
+          "state": "present",
+          "origin_relation": "same"
+        },
+        "policy": {
+          "follow": "automatic",
+          "post_301_302": "get",
+          "unsafe_replay": "allow",
+          "cross_origin": "allow",
+          "followed": 0,
+          "maximum": 8
+        },
+        "unsupported_features": [
+          "fragment"
+        ]
+      }
+    }
+  ],
+  "assumptions": [
+    "Offline supplied declarations only; no request is built or sent.",
+    "Origin relation, body replayability and policy are unverified assumptions.",
+    "GET-for-non-HEAD 303 and explicit 301/302 POST choices are lab policy."
+  ]
+}
+

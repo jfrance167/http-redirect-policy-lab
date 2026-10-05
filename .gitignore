@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+demo.md
+
+# Private third-party source snapshots retain their notices locally.
+research/captures/
+
+# Local review/runtime outputs are never public artifacts.
+.private/
+.drafts/
+.runtime/
+runtime/
+.test-tmp/
+.test-work/
+.verification-work/
+__pycache__/
+*.py[cod]
+.venv/
+graphify-out/

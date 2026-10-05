@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "name": "all-gates",
+      "optimized": false,
+      "cases": 40,
+      "input_bytes": 13383,
+      "json_bytes": 48893,
+      "markdown_bytes": 152985,
+      "natural_overflow": false,
+      "reduced_cap_seam_rejected": true
+    },
+    {
+      "name": "maximum-features",
+      "optimized": false,
+      "cases": 40,
+      "input_bytes": 25063,
+      "json_bytes": 52213,
+      "markdown_bytes": 175345,
+      "natural_overflow": false,
+      "reduced_cap_seam_rejected": true
+    }
+  ],
+  [
+    {
+      "name": "all-gates",
+      "optimized": true,
+      "cases": 40,
+      "input_bytes": 13383,
+      "json_bytes": 48893,
+      "markdown_bytes": 152985,
+      "natural_overflow": false,
+      "reduced_cap_seam_rejected": true
+    },
+    {
+      "name": "maximum-features",
+      "optimized": true,
+      "cases": 40,
+      "input_bytes": 25063,
+      "json_bytes": 52213,
+      "markdown_bytes": 175345,
+      "natural_overflow": false,
+      "reduced_cap_seam_rejected": true
+    }
+  ]
+]

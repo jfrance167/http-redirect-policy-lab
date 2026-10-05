@@ -1,0 +1,12 @@
+test_frozen_errors (test_lab.ModelTests.test_frozen_errors) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... ok
+test_identity_guards_never_call_native_hooks (test_lab.ModelTests.test_identity_guards_never_call_native_hooks) ... ok
+test_immutable_and_independent_copies (test_lab.ModelTests.test_immutable_and_independent_copies) ... ok
+test_independent_method_table (test_lab.ModelTests.test_independent_method_table) ... ok
+test_tree_bytes_and_schema_boundaries (test_lab.ModelTests.test_tree_bytes_and_schema_boundaries) ... ok
+test_whole_input_validation_and_shortcut_controls (test_lab.ModelTests.test_whole_input_validation_and_shortcut_controls) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.022s
+
+OK

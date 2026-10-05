@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-10-05T10:02:48.3379690Z",
+  "files": [
+    {
+      "sha256": "7e99731f2be2d7988d9182a3d3dfd57f00fe2f741de0ae1ae2bdb67084c09fb1",
+      "bytes": 7153,
+      "path": "CONTRACT.md"
+    },
+    {
+      "sha256": "dcff25124824ad7dae4c585300f8ac5dc351ff3337f4e50f77a2f6f0ea83965c",
+      "bytes": 17949,
+      "path": "fixtures\\cases.json"
+    },
+    {
+      "sha256": "a34a87a18c431caeacec6fbc8f16c8df65c9da971c5bd3dd9d0ec0769da9707e",
+      "bytes": 36676,
+      "path": "fixtures\\expected.json"
+    },
+    {
+      "sha256": "4acc345aaa350320851c22dd7a089c4b0cf8d4d2b48da326d834a586c0264009",
+      "bytes": 7261,
+      "path": "fixtures\\errors.json"
+    },
+    {
+      "sha256": "73a3179a98f6ed8428480d8ffc28dab519078dcfdd1788f98a50187e87c69bce",
+      "bytes": 11002,
+      "path": "research\\oracle-authoring-specs.json"
+    },
+    {
+      "sha256": "ca897d5e0c56cdcf671a35d96d6f00e4fccc27248e0a216f58e26e4464b914c4",
+      "bytes": 1833,
+      "path": "research\\ORACLE-REVIEW.md"
+    }
+  ],
+  "supported": 26,
+  "diagnostics": 15,
+  "unsupported": 14,
+  "case_count": 40,
+  "application_code_exists": false
+}

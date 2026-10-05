@@ -1,0 +1,726 @@
+[
+  [
+    "get-301",
+    {},
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT"
+    ]
+  ],
+  [
+    "head-302",
+    {
+      "response_status": 302,
+      "method": "HEAD"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "HEAD",
+      "ABSENT"
+    ]
+  ],
+  [
+    "post-301-get",
+    {
+      "method": "POST",
+      "body": "replayable"
+    },
+    [
+      "SUPPORTED",
+      "POST_TO_GET",
+      "GET",
+      "DROP"
+    ]
+  ],
+  [
+    "post-301-preserve",
+    {
+      "method": "POST",
+      "body": "replayable",
+      "policy": {
+        "post_301_302": "preserve"
+      }
+    },
+    [
+      "SUPPORTED",
+      "POST_PRESERVED",
+      "POST",
+      "PRESERVE"
+    ]
+  ],
+  [
+    "post-302-get",
+    {
+      "response_status": 302,
+      "method": "POST",
+      "body": "nonreplayable"
+    },
+    [
+      "SUPPORTED",
+      "POST_TO_GET",
+      "GET",
+      "DROP"
+    ]
+  ],
+  [
+    "post-302-preserve",
+    {
+      "response_status": 302,
+      "method": "POST",
+      "body": "replayable",
+      "policy": {
+        "post_301_302": "preserve"
+      }
+    },
+    [
+      "SUPPORTED",
+      "POST_PRESERVED",
+      "POST",
+      "PRESERVE"
+    ]
+  ],
+  [
+    "put-302",
+    {
+      "response_status": 302,
+      "method": "PUT",
+      "body": "replayable"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "PUT",
+      "PRESERVE"
+    ]
+  ],
+  [
+    "delete-301",
+    {
+      "method": "DELETE"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "DELETE",
+      "ABSENT"
+    ]
+  ],
+  [
+    "patch-307",
+    {
+      "response_status": 307,
+      "method": "PATCH",
+      "body": "replayable"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "PATCH",
+      "PRESERVE"
+    ]
+  ],
+  [
+    "post-308",
+    {
+      "response_status": 308,
+      "method": "POST",
+      "body": "replayable"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE"
+    ]
+  ],
+  [
+    "get-307",
+    {
+      "response_status": 307
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT"
+    ]
+  ],
+  [
+    "head-308",
+    {
+      "response_status": 308,
+      "method": "HEAD"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "HEAD",
+      "ABSENT"
+    ]
+  ],
+  [
+    "post-303",
+    {
+      "response_status": 303,
+      "method": "POST",
+      "body": "unknown"
+    },
+    [
+      "SUPPORTED",
+      "RETRIEVAL_303",
+      "GET",
+      "DROP"
+    ]
+  ],
+  [
+    "put-303",
+    {
+      "response_status": 303,
+      "method": "PUT",
+      "body": "nonreplayable",
+      "policy": {
+        "unsafe_replay": "deny"
+      }
+    },
+    [
+      "SUPPORTED",
+      "RETRIEVAL_303",
+      "GET",
+      "DROP"
+    ]
+  ],
+  [
+    "head-303",
+    {
+      "response_status": 303,
+      "method": "HEAD"
+    },
+    [
+      "SUPPORTED",
+      "RETRIEVAL_303",
+      "HEAD",
+      "DROP"
+    ]
+  ],
+  [
+    "get-303",
+    {
+      "response_status": 303
+    },
+    [
+      "SUPPORTED",
+      "RETRIEVAL_303",
+      "GET",
+      "DROP"
+    ]
+  ],
+  [
+    "options-301",
+    {
+      "method": "OPTIONS"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "OPTIONS",
+      "ABSENT"
+    ]
+  ],
+  [
+    "unsafe-put",
+    {
+      "response_status": 307,
+      "method": "PUT",
+      "body": "replayable",
+      "policy": {
+        "unsafe_replay": "deny"
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "PUT",
+      "PRESERVE",
+      [
+        "UNSAFE_REPLAY_DENIED"
+      ]
+    ]
+  ],
+  [
+    "unsafe-delete",
+    {
+      "response_status": 308,
+      "method": "DELETE",
+      "policy": {
+        "unsafe_replay": "deny"
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "DELETE",
+      "ABSENT",
+      [
+        "UNSAFE_REPLAY_DENIED"
+      ]
+    ]
+  ],
+  [
+    "body-unavailable",
+    {
+      "response_status": 307,
+      "method": "POST",
+      "body": "nonreplayable"
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE",
+      [
+        "BODY_NOT_REPLAYABLE"
+      ]
+    ]
+  ],
+  [
+    "body-unknown",
+    {
+      "response_status": 308,
+      "method": "POST",
+      "body": "unknown"
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE",
+      [],
+      [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ]
+    ]
+  ],
+  [
+    "choice-unknown",
+    {
+      "method": "POST",
+      "body": "nonreplayable",
+      "policy": {
+        "post_301_302": "unknown",
+        "unsafe_replay": "deny"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "POST_CHOICE_UNKNOWN",
+      null,
+      null,
+      [],
+      [
+        "UNKNOWN_METHOD_POLICY"
+      ]
+    ]
+  ],
+  [
+    "manual-choice-unknown",
+    {
+      "response_status": 302,
+      "method": "POST",
+      "body": "unknown",
+      "policy": {
+        "post_301_302": "unknown",
+        "follow": "manual",
+        "unsafe_replay": "unknown"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "POST_CHOICE_UNKNOWN",
+      null,
+      null,
+      [
+        "MANUAL_POLICY"
+      ],
+      [
+        "UNKNOWN_METHOD_POLICY"
+      ]
+    ]
+  ],
+  [
+    "manual-body-unknown",
+    {
+      "response_status": 307,
+      "method": "POST",
+      "body": "unknown",
+      "policy": {
+        "follow": "manual"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE",
+      [
+        "MANUAL_POLICY"
+      ],
+      [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ]
+    ]
+  ],
+  [
+    "manual-origin-unknown",
+    {
+      "policy": {
+        "follow": "manual"
+      },
+      "location": {
+        "origin_relation": "unknown"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "MANUAL_POLICY"
+      ],
+      [
+        "UNKNOWN_ORIGIN_RELATION"
+      ]
+    ]
+  ],
+  [
+    "all-independent-gates",
+    {
+      "response_status": 308,
+      "method": "PUT",
+      "body": "unknown",
+      "location": {
+        "origin_relation": "cross"
+      },
+      "policy": {
+        "follow": "manual",
+        "cross_origin": "deny",
+        "unsafe_replay": "unknown",
+        "followed": 8
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "PUT",
+      "PRESERVE",
+      [
+        "MANUAL_POLICY",
+        "CROSS_ORIGIN_DENIED",
+        "BUDGET_EXHAUSTED"
+      ],
+      [
+        "UNKNOWN_BODY_REPLAYABILITY",
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ]
+    ]
+  ],
+  [
+    "budget-follow-unknown",
+    {
+      "policy": {
+        "follow": "unknown",
+        "followed": 8
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "BUDGET_EXHAUSTED"
+      ],
+      [
+        "UNKNOWN_FOLLOW_POLICY"
+      ]
+    ]
+  ],
+  [
+    "cross-stop-unsafe-unknown",
+    {
+      "method": "PUT",
+      "body": "replayable",
+      "location": {
+        "origin_relation": "cross"
+      },
+      "policy": {
+        "cross_origin": "deny",
+        "unsafe_replay": "unknown"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "PUT",
+      "PRESERVE",
+      [
+        "CROSS_ORIGIN_DENIED"
+      ],
+      [
+        "UNKNOWN_UNSAFE_REPLAY_POLICY"
+      ]
+    ]
+  ],
+  [
+    "body-stop-cross-unknown",
+    {
+      "response_status": 307,
+      "method": "POST",
+      "body": "nonreplayable",
+      "location": {
+        "origin_relation": "cross"
+      },
+      "policy": {
+        "cross_origin": "unknown"
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE",
+      [
+        "BODY_NOT_REPLAYABLE"
+      ],
+      [
+        "UNKNOWN_CROSS_ORIGIN_POLICY"
+      ]
+    ]
+  ],
+  [
+    "missing-location-body-unknown",
+    {
+      "response_status": 308,
+      "method": "POST",
+      "body": "unknown",
+      "location": {
+        "state": "absent",
+        "origin_relation": null
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "POST",
+      "PRESERVE",
+      [
+        "NO_LOCATION"
+      ],
+      [
+        "UNKNOWN_BODY_REPLAYABILITY"
+      ]
+    ]
+  ],
+  [
+    "location-unknown-budget",
+    {
+      "location": {
+        "state": "unknown",
+        "origin_relation": null
+      },
+      "policy": {
+        "maximum": 0
+      }
+    },
+    [
+      "UNSUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "BUDGET_EXHAUSTED"
+      ],
+      [
+        "UNKNOWN_LOCATION"
+      ]
+    ]
+  ],
+  [
+    "cross-denied",
+    {
+      "location": {
+        "origin_relation": "cross"
+      },
+      "policy": {
+        "cross_origin": "deny"
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "CROSS_ORIGIN_DENIED"
+      ]
+    ]
+  ],
+  [
+    "zero-budget",
+    {
+      "policy": {
+        "maximum": 0
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "BUDGET_EXHAUSTED"
+      ]
+    ]
+  ],
+  [
+    "no-location",
+    {
+      "location": {
+        "state": "absent",
+        "origin_relation": null
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "NO_LOCATION"
+      ]
+    ]
+  ],
+  [
+    "manual",
+    {
+      "policy": {
+        "follow": "manual"
+      }
+    },
+    [
+      "SUPPORTED",
+      "METHOD_PRESERVED",
+      "GET",
+      "ABSENT",
+      [
+        "MANUAL_POLICY"
+      ]
+    ]
+  ],
+  [
+    "created-control",
+    {
+      "response_status": 201
+    },
+    [
+      "SUPPORTED",
+      "NOT_FOLLOW_PROFILE",
+      null,
+      null,
+      [],
+      [],
+      "NOT_APPLICABLE"
+    ]
+  ],
+  [
+    "cache-control",
+    {
+      "response_status": 304,
+      "location": {
+        "state": "unknown",
+        "origin_relation": null
+      },
+      "policy": {
+        "follow": "unknown",
+        "post_301_302": "unknown",
+        "unsafe_replay": "unknown",
+        "cross_origin": "unknown",
+        "maximum": 0
+      }
+    },
+    [
+      "SUPPORTED",
+      "NOT_FOLLOW_PROFILE",
+      null,
+      null,
+      [],
+      [],
+      "NOT_APPLICABLE"
+    ]
+  ],
+  [
+    "unsupported-feature",
+    {
+      "unsupported_features": [
+        "cookies"
+      ]
+    },
+    [
+      "UNSUPPORTED",
+      "UNSUPPORTED",
+      null,
+      null,
+      [],
+      [],
+      "UNSUPPORTED",
+      [
+        "UNSUPPORTED_FEATURE"
+      ]
+    ]
+  ],
+  [
+    "unsupported-method",
+    {
+      "method": "TRACE"
+    },
+    [
+      "UNSUPPORTED",
+      "UNSUPPORTED",
+      null,
+      null,
+      [],
+      [],
+      "UNSUPPORTED",
+      [
+        "UNSUPPORTED_METHOD"
+      ]
+    ]
+  ],
+  [
+    "unsupported-all",
+    {
+      "response_status": 399,
+      "method": "CUSTOM",
+      "unsupported_features": [
+        "fragment"
+      ]
+    },
+    [
+      "UNSUPPORTED",
+      "UNSUPPORTED",
+      null,
+      null,
+      [],
+      [],
+      "UNSUPPORTED",
+      [
+        "UNSUPPORTED_FEATURE",
+        "UNSUPPORTED_METHOD",
+        "UNSUPPORTED_STATUS"
+      ]
+    ]
+  ]
+]
